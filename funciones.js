@@ -1,7 +1,7 @@
 /////////////// CATEGORY ///////////////
 function traerInformacionCategorias(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://150.136.250.44:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
 
@@ -37,7 +37,7 @@ function guardarInformacionCategorias(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://localhost:8080/api/Category/save",
+        url:"http://150.136.250.44:8080/api/Category/save",
        
         
         success:function(response) {
@@ -62,7 +62,7 @@ function guardarInformacionCategorias(){
 /////////////// ORTOPEDIC ///////////////
 function traerInformacionOrtopedic(){
     $.ajax({
-        url:"http://localhost:8080/api/Ortopedic/all",
+        url:"http://150.136.250.44:8080/api/Ortopedic/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -101,7 +101,7 @@ function guardarInformacionOrtopedics(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://localhost:8080/api/Ortopedic/save",
+        url:"http://150.136.250.44:8080/api/Ortopedic/save",
        
         
         success:function(response) {
@@ -124,7 +124,7 @@ function guardarInformacionOrtopedics(){
 /////////////// CLIENT ///////////////
 function traerInformacionClientes(){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://150.136.250.44:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -163,7 +163,7 @@ function guardarInformacionClientes(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://150.136.250.44:8080/api/Client/save",
        
         
         success:function(response) {
