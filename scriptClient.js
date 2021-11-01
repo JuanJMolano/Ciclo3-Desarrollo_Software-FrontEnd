@@ -4,7 +4,7 @@
 function traerInformacionCliente(){
     $.ajax({
         datatype:"json",
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://150.136.250.44:8080/api/Client/all",
         type:"GET",
         
         success:function(response){
@@ -43,7 +43,7 @@ function guardarInformacionCliente(){
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
         data: JSON.stringify(infoClient), 
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://150.136.250.44:8080/api/Client/save",
            
         success:function(response) {
             console.log(response);
@@ -64,7 +64,7 @@ function obtenerItemEspecifico(idElemento){
 
     $.ajax({
         dataType: 'json',
-        url:"http://localhost:8080/api/Client/"+idElemento,
+        url:"http://150.136.250.44:8080/api/Client/"+idElemento,
         type: 'GET',
     
         success:function(response){
@@ -94,7 +94,7 @@ function actualizarInformacionCliente(idElemento){
     let dataToSend=JSON.stringify(myData);
 
     $.ajax({
-        url:"http://localhost:8080/api/Client/update",
+        url:"http://150.136.250.44:8080/api/Client/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -126,7 +126,7 @@ function borrarInformacionCliente(idElemento){
     $.ajax({
         datatype:"json",
         data:dataToSend,
-        url:"http://localhost:8080/api/Client/"+idElemento,
+        url:"http://150.136.250.44:8080/api/Client/"+idElemento,
         type:"DELETE",
         contentType:"application/JSON",
         

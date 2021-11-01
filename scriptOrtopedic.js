@@ -4,7 +4,7 @@
 function traerInformacionOrtopedic(){
     $.ajax({
         datatype:"JSON",
-        url:"http://localhost:8080/api/Ortopedic/all",
+        url:"http://150.136.250.44:8080/api/Ortopedic/all",
         type:"GET",
 
         success:function(response){
@@ -43,7 +43,7 @@ function guardarInformacionOrtopedic(){
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
         data: JSON.stringify(infoOrtopedic),
-        url:"http://localhost:8080/api/Ortopedic/save",
+        url:"http://150.136.250.44:8080/api/Ortopedic/save",
        
         success:function(response) {
                 console.log(response);
@@ -64,7 +64,7 @@ function obtenerItemEspecifico(idElemento){
 
     $.ajax({
         dataType: 'json',
-        url:"http://localhost:8080/api/Ortopedic/"+idElemento,
+        url:"http://150.136.250.44:8080/api/Ortopedic/"+idElemento,
         type: 'GET',
     
         success:function(response){
@@ -94,7 +94,7 @@ function actualizarInformacionOrtopedic(idElemento){
     let dataToSend=JSON.stringify(myData);
 
     $.ajax({
-        url:"http://localhost:8080/api/Ortopedic/update",
+        url:"http://150.136.250.44:8080/api/Ortopedic/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -126,7 +126,7 @@ function borrarInformacionOrtopedic(idElemento){
     $.ajax({
         datatype:"JSON",
         data:dataToSend,
-        url:"http://localhost:8080/api/Ortopedic/"+idElemento,
+        url:"http://150.136.250.44:8080/api/Ortopedic/"+idElemento,
         type:"DELETE",
         contentType:"application/JSON",
         
